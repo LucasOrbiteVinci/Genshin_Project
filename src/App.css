@@ -1,0 +1,41 @@
+/* TimerDifferenceCalculator.css */
+
+/* Center the content vertically and horizontally */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .player label {
+    font-weight: bold;
+  }
+  
+  .player input {
+    margin-bottom: 10px;
+  }
+  
+  .differences {
+    margin-top: 20px;
+  }
+  
+  /* Add responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
