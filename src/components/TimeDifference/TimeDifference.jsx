@@ -203,7 +203,7 @@ function TimerDifferenceCalculator() {
       </div>
       <div className={style.footer}>
         {' '}
-        &copy; Dreyar{' '}
+        &copy; Dreyar all rights reserved{' '}
         <a href="#" target="_blank">
           Suport the Developer.
         </a>
