@@ -9,5 +9,8 @@
     font-weight: 600;
     display: flex;
     justify-content: center;
-    margin-top: 300px;
+  }
+
+  .footer a {
+    color:blue;
   }
