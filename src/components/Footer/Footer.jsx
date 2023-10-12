@@ -10,7 +10,7 @@ const Footer = () => {
           href="https://www.paypal.com/donate/?hosted_button_id=7NW5T4MYGQYLN"
           target="_blank"
         >
-          Support the Developer.
+          Support the Project.
         </a>
       </p>
     </div>
