@@ -153,6 +153,7 @@ function TimerDifferenceCalculator() {
               ))}
             </div>
           </div>
+
           <div className={style.player2reset}>
             <select
               onChange={(e) => setResetsP2(e.target.value)}
@@ -179,6 +180,7 @@ function TimerDifferenceCalculator() {
             </span>
           </div>
         </div>
+
         <div className={style.buttons}>
           <button className={style.clearbtn} onClick={handleClearFields}>
             Clear
@@ -202,11 +204,13 @@ function TimerDifferenceCalculator() {
         )}
       </div>
       <div className={style.footer}>
-        {' '}
-        &copy; Dreyar all rights reserved{' '}
-        <a href="#" target="_blank">
-          Suport the Developer.
-        </a>
+        &copy;Dreyar
+        <p>
+          {' '}
+          <a href="#" target="_blank">
+            Suport the Developer.
+          </a>
+        </p>
       </div>
     </>
   );

@@ -38,15 +38,15 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 300px;
-    height: 100%;
+    width: 450px;
+    height: 210px;
     gap: 5px;
     padding: 15px 5px 5px 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,.25);
   }
 
-  .player1reset {
-    font-size: 14px;
+  .player1reset { 
+    font-size: 24px;
     font-weight: bolder;
     border-radius: 5px;
   }
@@ -57,11 +57,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    width: 100px;
-    height: 25px;
+    width: 150px;
+    height: 35px;
     cursor: pointer;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 26px;
     text-align: center;
     text-decoration: none;
     border: none;
@@ -74,10 +74,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     padding-top: 10px;
     font-weight: 500;
     cursor: pointer;
+    font-size: 25px;
   }
 
   .player2box {
@@ -86,11 +86,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    width: 100px;
-    height: 25px;
+    width: 150px;
+    height: 35px;
     cursor: pointer;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 26px;
     text-align: center;
     text-decoration: none;
     border: none;
@@ -99,7 +99,7 @@
 
   .player2reset {
     appearance: none;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 900;
     border-radius: 5px;
     color: #0e0c0c;
@@ -108,10 +108,13 @@
   .player2time {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;  
     align-items: center;
-    width: 100%;
-    padding-top: 10px;
+    width: 100px;
+    padding-top: 20px;
+    padding-left: 45px;
+    font-size: 25px;
+    cursor: pointer;
   }
   
   .player1time {
@@ -120,34 +123,37 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    width: 100px;
+    padding-top: 20px;
+    padding-left: 45px;
   }
 
   .infos {
     background: rgb(0,4,40);
-    background: linear-gradient(90deg, rgba(0,4,40,1) 0%, rgba(0,78,146,1) 100%);;
+    background: linear-gradient(90deg, rgba(0,4,40,1) 0%, rgba(0,78,146,1) 100%);
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    text-align: center;
-  } 
+    align-items: center;
+    width: 450px;
+    height: 110px;
+    
+  }
 
   .winner {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 12px;
-    width: 150px;
-    height: 45px;
+    font-size: 19px;
+    width: 220px;
+    height: 80px;
 	  border-radius: 10px;
 	  font-weight: 600;
 	  box-shadow: 0 2px 5px rgba(0,0,0,.25);
     background: #242933;
 	  color: #f2f4f7;
-    padding: 20px 0 0 0;
+    gap: 20px;
+    padding-top: 10px;
   }
 
   .buttons {
@@ -157,10 +163,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: auto;
-    gap: 5px;
-    padding: 0 0 10px 0;
-    
+    width: 450px;
+    height: 50px;
+    gap: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
   }
   
   .clearbtn {
@@ -171,12 +178,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
-    height: 22px;
+    width: 60px;
+    height: 37px;
     border: 1px solid #0e0c0c;
     cursor: pointer;
     font-weight: bold;
-    font-size: 11px;
+    font-size: 19px;
     padding: 8px;
     margin-bottom: 4px;
     margin-top: 10px;
@@ -195,12 +202,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
-    height: 22px;
+    width: 60px;
+    height: 37px;
     border: 1px solid #171717;
     cursor: pointer;
     font-weight: bold;
-    font-size: 11px;
+    font-size: 19px;
     padding: 8px;
     margin-bottom: 4px;
     margin-top: 10px;
@@ -220,19 +227,10 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 22px;
     border-radius: 0 0 5px 5px;
-    padding: 20px 0 0 10px;
-  }
-
-  .chambers::before {
-    position: absolute;
-    content: "";
-    background-color: #f2f4f7;
-    width: 15em;
-    height: 2px;
-    margin-bottom: 140px;
-    border-radius: 1px;
+    width: 450px;
+    height: 180px;
   }
 
   .footer {
@@ -242,10 +240,13 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 30px;
     align-items: center;
     color: #f2f4f7;
-    font-size: 8px;
+    font-size: 13px;
     font-weight: 500;
+    display: flex;
+    align-items: center;
   }
 
   /* Resposive */
