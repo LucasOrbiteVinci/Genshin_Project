@@ -4,6 +4,9 @@ import React, { useState, useEffect } from 'react';
 // CSS
 import style from './TimeDifference.module.css';
 
+// Icons
+import { RiSwordFill } from 'react-icons/ri';
+
 function TimerDifferenceCalculator() {
   const [player1Timers, setPlayer1Timers] = useState([
     '00:00',
@@ -131,6 +134,15 @@ function TimerDifferenceCalculator() {
               ))}
             </div>
           </div>
+
+          <div className={style.ch}>
+            <div className={style.swordicon}>
+              <RiSwordFill />
+            </div>
+            <p>CH1</p>
+            <p>CH2</p>
+            <p>CH3</p>
+          </div>
           <div>
             <input
               className={style.player2box}
@@ -175,7 +187,7 @@ function TimerDifferenceCalculator() {
                 Total: {Math.floor(
                   Math.abs(maxTimes[0] - maxTimes[1]) / 60,
                 )}{' '}
-                min : {Math.abs(maxTimes[0] - maxTimes[1]) % 60} secs.
+                min and {Math.abs(maxTimes[0] - maxTimes[1]) % 60} secs
               </p>
             </span>
           </div>
@@ -188,6 +200,7 @@ function TimerDifferenceCalculator() {
           <button className={style.infobtn} onClick={toggleVisibility}>
             Infos
           </button>{' '}
+          <div className={style.bar}></div>
         </div>
 
         {isVisible ? '' : ''}
@@ -196,7 +209,7 @@ function TimerDifferenceCalculator() {
             {/* Content to be hidden or shown */}
             {differences.map((difference, index) => (
               <p key={index}>
-                Chamber {index + 1} : {Math.floor(difference / 60)} min{' '}
+                Chamber {index + 1}: {Math.floor(difference / 60)} min{' '}
                 {difference % 60} sec
               </p>
             ))}
